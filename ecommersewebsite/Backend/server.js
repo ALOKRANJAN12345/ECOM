@@ -23,7 +23,7 @@ const __dirname = path.dirname(__filename);
 // ✅ CORS setup
 app.use(cors({
   origin: [
-    "https://project-three-beta-njyppznuea.vercel.app", "http://localhost:5173"
+    "https://ecom-three-gamma.vercel.app", "http://localhost:5173"
   ],
   credentials: true, // fixed spelling
 }));
