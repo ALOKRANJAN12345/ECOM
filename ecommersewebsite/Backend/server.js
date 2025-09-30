@@ -33,7 +33,7 @@ app.use(express.json());
 
 // ✅ Root route
 app.get("/", (req, res) => {
-  res.send("Backend is live and connected");
+  res.send("Hello Alok, Backend is live and connected");
 });
 
 // ✅ Ensure uploads folder exists (TEMP on Vercel)
