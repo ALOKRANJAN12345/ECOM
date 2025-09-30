@@ -3,6 +3,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { FaUser, FaEnvelope, FaLock } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const CustomerLogin = () => {
   const [email, setEmail] = useState('');
@@ -94,13 +95,12 @@ const CustomerLogin = () => {
               Sign in
             </button>
           </form>
-
-          <div className="mt-6 text-center text-sm">
-            New here?{' '}
-            <a href="/customer/signup" className="text-blue-600 hover:underline">
-              Create an account
-            </a>
-          </div>
+<div className="mt-6 text-center text-sm">
+  New here?{" "}
+  <Link to="/customer/signup" className="text-blue-600 hover:underline">
+    Create an account
+  </Link>
+</div>
         </div>
       </div>
     </div>

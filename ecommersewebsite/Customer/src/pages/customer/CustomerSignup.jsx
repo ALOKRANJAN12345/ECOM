@@ -3,6 +3,7 @@ import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { FaUser, FaEnvelope, FaLock, FaSignature } from 'react-icons/fa';
 import axios from 'axios';
+import { Link } from "react-router-dom"; 
 
 const CustomerSignup = () => {
   const [form, setForm] = useState({ name: '', email: '', password: '', confirmPassword: '' });
@@ -89,12 +90,12 @@ const CustomerSignup = () => {
             </div>
           </form>
 
-          <div className="mt-6 text-center text-sm">
-            Already have an account?{' '}
-            <a href="/customer/login" className="text-blue-600 hover:underline">
-              Sign in
-            </a>
-          </div>
+<div className="mt-6 text-center text-sm">
+  Already have an account?{" "}
+  <Link to="/customer/login" className="text-blue-600 hover:underline">
+    Sign in
+  </Link>
+</div>
         </div>
       </div>
     </div>
