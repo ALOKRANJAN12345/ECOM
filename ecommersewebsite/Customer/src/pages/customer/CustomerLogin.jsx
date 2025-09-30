@@ -16,7 +16,7 @@ const CustomerLogin = () => {
     setError('');
 
     try {
-      const res = await axios.post('https://project-hefx.vercel.app/api/auth/login', {
+      const res = await axios.post('https://ecom-6ipr.vercel.app/api/auth/login', {
         email,
         password,
         role: 'customer'

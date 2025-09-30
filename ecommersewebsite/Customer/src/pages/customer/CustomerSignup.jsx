@@ -26,7 +26,7 @@ const CustomerSignup = () => {
 
     try {
       // ✅ Register with role: customer
-      await axios.post("https://project-hefx.vercel.app/api/auth/register", {
+      await axios.post("https://ecom-6ipr.vercel.app//api/auth/register", {
         name: form.name,
         email: form.email,
         password: form.password,

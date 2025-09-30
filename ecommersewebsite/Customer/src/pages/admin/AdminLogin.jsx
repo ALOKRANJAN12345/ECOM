@@ -19,7 +19,7 @@ const AdminLogin = () => {
 
     try {
       const response = await axios.post(
-        'https://project-hefx.vercel.app/api/auth/login',
+        'https://ecom-6ipr.vercel.app/api/auth/login',
         {
           email,
           password,
