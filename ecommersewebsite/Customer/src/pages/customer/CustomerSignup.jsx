@@ -34,7 +34,7 @@ const CustomerSignup = () => {
       });
 
       // ✅ Auto login after signup
-      const res = await axios.post("http://localhost:5000/api/auth/login", {
+      const res = await axios.post("https://ecom-6ipr.vercel.app/api/auth/login", {
         email: form.email,
         password: form.password,
         role: 'customer'
